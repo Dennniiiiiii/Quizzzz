@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../src/css/style.css" />
+    <link rel="stylesheet" href="../src/css/styles.css" />
+    <link
+      rel="shortcut icon"
+      href="../src/img/edgard.png"
+      type="image/x-icon"
+    />
+    <title>Game Quiz</title>
+  </head>
+
+  <body class="black-bg align-content">
+    <div class="jogo">
+      <header class="topo">
+        <h1>
+          <span style="font-family: Alkatra"> 20 Anos</span> - Lei 10.639/2003
+        </h1>
+        <p class="numero-perguntas">0</p>
+        <a href="../index.html"
+          ><img
+            id="botao-voltar"
+            class="botao-status"
+            src="../src/img/botao-voltar.png"
+            alt="icone de voltar"
+        /></a>
+      </header>
+      <div class="perguntas">
+        <div class="quadro-perguntas">
+          <p class="texto-perguntas"></p>
+        </div>
+      </div>
+      <div class="alternativas">
+        <button id="alternativa-A" class="botao-alternativas"></button>
+        <button id="alternativa-B" class="botao-alternativas"></button>
+        <button id="alternativa-C" class="botao-alternativas"></button>
+        <button id="alternativa-D" class="botao-alternativas"></button>
+      </div>
+      <div class="status">
+        <img
+          id="botao-img"
+          class="botao-status"
+          src="../src/img/botao-img.png"
+          alt="icone de voltar"
+        />
+        <a href=""
+          ><img
+            id="botao-reiniciar"
+            class="botao-status"
+            src="../src/img/botao-reiniciar.png"
+            alt="icone de reiniciar"
+        /></a>
+        <img
+          id="botao-avancar"
+          class="botao-status"
+          src="../src/img/botao-avancar.png"
+          alt="icone de avançar"
+        />
+      </div>
+      <div class="fim-jogo">
+        <div class="topo">
+          <h2>
+            <span style="font-family: Alkatra"> 20 Anos</span> - Lei 10.639/2003
+          </h2>
+        </div>
+        <div class="nota-final">
+          <h2>Você acertou</h2>
+        </div>
+        <div class="pontuacao-final">
+          <h2 class="pontos-porcentagem">100</h2>
+          <div class="barra-nota-final">
+            <div class="barra-de-nota"></div>
+          </div>
+        </div>
+        <div class="content">
+          <a href="../index.html"
+            ><img
+              class="botao-content"
+              src="../src/img/botao-voltar.png"
+              alt="icone de voltar"
+          /></a>
+          <a href="quizz.html"
+            ><img
+              class="botao-content"
+              src="../src/img/botao-reiniciar.png"
+              alt="icone de reiniciar"
+          /></a>
+        </div>
+      </div>
+    </div>
+    <div class="imagens-quiz">
+      <div class="img-pergunta">
+        <button class="botao-fechar">X</button>
+        <img
+          class="img-quiz"
+          src="../src/img/questao-1.jpeg"
+          alt="imagens do quiz"
+        />
+        <a class="fonte" href="" target="_blank">Fonte</a>
+      </div>
+    </div>
+    <script src="../src/js/index.js" defer></script>
+  </body>
+</html>

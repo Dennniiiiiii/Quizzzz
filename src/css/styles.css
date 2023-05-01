@@ -1,0 +1,793 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --black: black;
+  --maron: #ac6631;
+}
+
+@media (max-width: 912px) {
+
+.align-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main{
+  max-width: 912px;
+  margin: 0 auto;
+}
+.jogo{
+  width: 912px;
+  margin: 0 auto;
+}
+
+.black-bg {
+  background-image: url(../img/AFRICAAAA.png);
+  background-color: #808080;
+  background-position: center;
+  height: 100vh;
+  background-size: cover;
+}
+.topo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--maron);
+  height: 7vh;
+  width: 100%;
+  color: white;
+}
+.numero-perguntas {
+  position: absolute;
+  right: 10%;
+  font-size: 15px;
+}
+.topo a{
+  position: absolute;
+  margin-top: 5px;
+  left: 4%;
+  font-size: 15px;
+}
+#botao-voltar{
+  width: 30px;
+  height: 30px;
+}
+.quadro-perguntas {
+  padding: 20px;
+  height: 80%;
+  width: 89%;
+  background-color: white;
+  border-radius: 15px;
+  text-align: justify;
+  font-size: clamp(8px, 18px, 25px);
+  box-shadow: 0 5px rgba(128, 128, 128, 0.377);
+}
+.perguntas {
+  height: 41vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.alternativas {
+  height: 45vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.status {
+  height: 7vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--maron);
+}
+
+.botao-alternativas {
+  margin: 3% 5% 3% 5%;
+  padding: 1%;
+  height: 18%;
+  width: 89%;
+  background-color: white;
+  border-radius: 15px;
+  border: 2px solid rgba(128, 128, 128, 0.466);
+  box-shadow: 0 5px rgba(128, 128, 128, 0.377);
+  cursor: pointer;
+  font-size: clamp(10px, 12px, 25px);
+  font-weight: 600;
+}
+.botao-status {
+  cursor: pointer;
+}
+.status :nth-child(1) {
+  margin-left: 5%;
+  height: 87%;
+}
+.status :nth-child(2) {
+  height: 93%;
+}
+.status :nth-child(3) {
+  height: 80%;
+  margin-right: 5%;
+}
+.fim-jogo {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(52, 52, 50, 1);
+  opacity: 0;
+  visibility: hidden;
+}
+.aberto {
+  opacity: 1;
+  visibility: visible;
+}
+.nota-final {
+  height: 41vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+}
+.nota-final h2,
+.pontuacao-final h2 {
+  color: white;
+  font-size: 50px;
+}
+.nota-final p {
+  color: white;
+  font-size: 45px;
+}
+.barra-nota-final {
+  background-color: rgba(52, 52, 50, 1);
+  height: 15%;
+  width: 90%;
+  border-radius: 20px;
+  border: 1px solid white;
+}
+.barra-de-nota {
+  background-color: green;
+  height: 100%;
+  width: 0%;
+  border-radius: 20px;
+}
+.pontuacao-final {
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.content {
+  height: 27vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--maron);
+}
+.content a{
+    height: 80%;
+}
+.botao-content{
+    height: 55%;
+    width: 90%;
+}
+@media (max-height: 720px) and (orientation: landscape)
+{
+  .botao-alternativas {
+    margin: 1% 5% 1% 5%;
+    padding: 0;
+    height: 18%;
+    width: 89%;
+    background-color: white;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    font-size: clamp(8px, 18px, 25px);
+    font-weight: normal;
+  }
+  
+}
+
+.topo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--maron);
+  height: 7vh;
+  width: 100%;
+}
+
+.topo h1 {
+  color: #000;
+  font-size: 16px;
+  text-shadow:  5px 2px 5px #696969;
+  margin-right: 15px;
+}
+
+.topo span {
+  color: white;
+  text-shadow:  5px 2px 5px #000;
+  
+}
+
+.head {
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 10vh;
+  width: 100%;
+  color: white;
+}
+
+.anos {
+  width: 40%;
+  height: 80%;
+}
+
+.logo {
+  height: 37vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.iniciar {
+  height: 46vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+
+}
+
+.logo-cepes {
+  display: flex;
+  position: relative;
+}
+
+
+.cepes-logo {
+  margin-top: 10%;
+  width: 30%;
+}
+
+.fundo-bg {
+  background: 
+  linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+  url(../img/zumbizin.png);
+  background-repeat: no-repeat;
+  background-position: 3%;
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+ 
+}
+
+.lei {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  margin-top: 120%;
+}
+
+.lei span {
+  color: gray;
+}
+
+.lei h1 {
+  color: 	#FF8C00;
+  font-size: 40px;
+  text-shadow: 0 1px 0 black,
+0 2px 0 black,
+0 3px 0 black,
+0 4px 0 black,
+0 5px 0 black,
+0 6px 1px rgba(0,0,0,.1),
+0 0 5px rgba(0,0,0,.1),
+0 1px 3px rgba(0,0,0,.3),
+0 3px 5px rgba(0,0,0,.2),
+0 5px 10px rgba(0,0,0,.25),
+0 10px 10px rgba(0,0,0,.2),
+0 20px 20px rgba(0,0,0,.15);
+}
+
+.pezinho {
+  height: 7vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--maron);
+}
+
+.pezinho img {
+  width: 15%;
+}
+
+.facebook {
+  height: 50%;
+  width: 100%;
+}
+
+.blogger {
+  width: 100%;
+  height: 50%;
+}
+
+.instagram {
+  height: 50%;
+  width: 100%;
+}
+
+.botao-iniciar {
+  color: white;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+  text-align: center;
+  text-decoration: none;
+
+  display: block;
+  position: relative;
+  padding: 20px 40px;
+  padding: 2.5%;
+  height: 18%;
+  width: 45%;
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0 5px #808080;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: #FF8C00;
+  text-align: center;
+  color: #8B4513;
+  font-size: 25px;
+  margin-bottom: 9%;
+  font-weight: 600;
+
+
+
+  text-shadow: 0px 1px 0px #000;
+  filter: dropshadow(color=#000, offx=0px, offy=1px);
+
+
+  box-shadow: inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+
+
+
+  border-radius: 10px;
+}
+
+.botao-iniciar:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  padding: 4px;
+  position: absolute;
+  bottom: -15px;
+  left: -4px;
+  z-index: -1;
+  background-color: #2B1800;
+  border-radius: 15px;
+}
+
+.botao-baixo {
+  height: 80%;
+  width: 25%;
+  border-radius: 17%;
+  border: none;
+  cursor: pointer;
+}
+
+#botao-voltar {
+  margin-left: 2%;
+}
+
+#botao-avancar {
+  margin-right: 2%;
+}
+
+}
+
+
+
+@media (min-width: 913px) {
+
+  .align-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  main{
+    max-width: 912px;
+    margin: 0 auto;
+  }
+  .jogo{
+    width: 912px;
+    margin: 0 auto;
+  }
+  
+  .black-bg {
+    background-image: url(../img/AFRICAAAA.png);
+    background-color: #808080;
+    background-position: center;
+    height: 100vh;
+    background-size: cover;
+  }
+  .topo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--maron);
+    height: 7vh;
+    width: 100%;
+    color: white;
+  }
+  .numero-perguntas {
+    position: absolute;
+    right: 10%;
+    font-size: 15px;
+  }
+  .topo a{
+    position: absolute;
+    margin-top: 5px;
+    left: 4%;
+    font-size: 15px;
+  }
+  #botao-voltar{
+    width: 30px;
+    height: 30px;
+  }
+  .quadro-perguntas {
+    padding: 20px;
+    height: 80%;
+    width: 89%;
+    background-color: white;
+    border-radius: 15px;
+    text-align: justify;
+    font-size: clamp(8px, 18px, 25px);
+    box-shadow: 0 5px rgba(128, 128, 128, 0.377);
+  }
+  .perguntas {
+    height: 41vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .alternativas {
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .status {
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--maron);
+  }
+  
+  .botao-alternativas {
+    margin: 3% 5% 3% 5%;
+    padding: 1%;
+    height: 18%;
+    width: 89%;
+    background-color: white;
+    border-radius: 15px;
+    border: 2px solid rgba(128, 128, 128, 0.466);
+    box-shadow: 0 5px rgba(128, 128, 128, 0.377);
+    cursor: pointer;
+    font-size: clamp(10px, 12px, 25px);
+    font-weight: 600;
+  }
+  .botao-status {
+    cursor: pointer;
+  }
+  .status :nth-child(1) {
+    margin-left: 5%;
+    height: 87%;
+  }
+  .status :nth-child(2) {
+    height: 93%;
+  }
+  .status :nth-child(3) {
+    height: 80%;
+    margin-right: 5%;
+  }
+  .fim-jogo {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(52, 52, 50, 1);
+    opacity: 0;
+    visibility: hidden;
+  }
+  .aberto {
+    opacity: 1;
+    visibility: visible;
+  }
+  .nota-final {
+    height: 41vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+  }
+  .nota-final h2,
+  .pontuacao-final h2 {
+    color: white;
+    font-size: 50px;
+  }
+  .nota-final p {
+    color: white;
+    font-size: 45px;
+  }
+  .barra-nota-final {
+    background-color: rgba(52, 52, 50, 1);
+    height: 15%;
+    width: 90%;
+    border-radius: 20px;
+    border: 1px solid white;
+  }
+  .barra-de-nota {
+    background-color: green;
+    height: 100%;
+    width: 0%;
+    border-radius: 20px;
+  }
+  .pontuacao-final {
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .content {
+    height: 27vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--maron);
+  }
+  .content a{
+      height: 80%;
+  }
+  .botao-content{
+      height: 55%;
+      width: 90%;
+  }
+  @media (max-height: 720px) and (orientation: landscape)
+  {
+    .botao-alternativas {
+      margin: 1% 5% 1% 5%;
+      padding: 0;
+      height: 18%;
+      width: 89%;
+      background-color: white;
+      border-radius: 15px;
+      border: none;
+      cursor: pointer;
+      font-size: clamp(8px, 18px, 25px);
+      font-weight: normal;
+    }
+    
+  }
+  
+  .topo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--maron);
+    height: 7vh;
+    width: 100%;
+  }
+  
+  .topo h1 {
+    color: #000;
+    font-size: 16px;
+    text-shadow:  5px 2px 5px #696969;
+    margin-right: 15px;
+  }
+  
+  .topo span {
+    color: white;
+    text-shadow:  5px 2px 5px #000;
+    
+  }
+  
+  .head {
+  
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 10vh;
+    width: 100%;
+    color: white;
+  }
+  
+  .anos {
+    width: 40%;
+    height: 80%;
+  }
+  
+  .logo {
+    height: 37vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+  
+  .iniciar {
+    height: 48vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+  
+  }
+  
+  .logo-cepes {
+    display: flex;
+    position: relative;
+    margin-left: 5%;
+  }
+  
+  
+  .cepes-logo {
+    margin-top: 30%;
+    width: 30%;
+
+  }
+  
+  .fundo-bg {
+    background: 
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url(../img/zumbi-dos-palmaress.png);
+    background-repeat: no-repeat;
+    max-width: 100vw;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+   
+  }
+  
+  .lei {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    margin-top: 40%;
+    margin-left: 70%;
+  }
+  
+  .lei span {
+    color: gray;
+  }
+  
+  .lei h1 {
+    color: 	#FF8C00;
+    font-size: 40px;
+    text-shadow: 0 1px 0 black,
+  0 2px 0 black,
+  0 3px 0 black,
+  0 4px 0 black,
+  0 5px 0 black,
+  0 6px 1px rgba(0,0,0,.1),
+  0 0 5px rgba(0,0,0,.1),
+  0 1px 3px rgba(0,0,0,.3),
+  0 3px 5px rgba(0,0,0,.2),
+  0 5px 10px rgba(0,0,0,.25),
+  0 10px 10px rgba(0,0,0,.2),
+  0 20px 20px rgba(0,0,0,.15);
+  }
+  
+  .pezinho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--maron);
+  }
+  
+  .pezinho img {
+    width: 15%;
+  }
+  
+  .facebook {
+    width: 20%;
+    height: 50%;
+
+  }
+  
+  .blogger {
+    width: 20%;
+    height: 50%;
+  }
+  
+  .instagram {
+    width: 20%;
+    height: 50%;
+
+  }
+  
+  .botao-iniciar {
+    margin-left: 56%;
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    position: relative;
+    padding: 20px 40px;
+    padding: 2.5%;
+    height: 20%;
+    width: 15%;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 5px #808080;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #FF8C00;
+    text-align: center;
+    color: #8B4513;
+    font-size: 25px;
+    margin-bottom: 9%;
+    font-weight: 600;
+    text-shadow: 0px 1px 0px #000;
+    filter: dropshadow(color=#000, offx=0px, offy=1px);
+    box-shadow: inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+    border-radius: 10px;
+  }
+  
+  .botao-iniciar:after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    padding: 4px;
+    position: absolute;
+    bottom: -15px;
+    left: -4px;
+    z-index: -1;
+    background-color: #2B1800;
+    border-radius: 15px;
+  }
+  
+  .botao-baixo {
+    height: 80%;
+    width: 25%;
+    border-radius: 17%;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #botao-voltar {
+    margin-left: 2%;
+  }
+  
+  #botao-avancar {
+    margin-right: 2%;
+  }
+  
+
+}

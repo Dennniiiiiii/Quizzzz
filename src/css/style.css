@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --black: black;
+  --maron: #ac6631;
+}
+
+.align-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  max-width: 912px;
+  margin: 0 auto;
+}
+
+.jogo {
+  width: 912px;
+  margin: 0 auto;
+}
+
+.black-bg {
+  background-color: rgb(22, 20, 20);
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.topo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--maron);
+  height: 7vh;
+  width: 100%;
+  color: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.numero-perguntas {
+  position: absolute;
+  right: 10%;
+  font-size: 15px;
+}
+
+.topo a {
+  position: absolute;
+  margin-top: 5px;
+  left: 4%;
+  font-size: 15px;
+}
+
+#botao-voltar {
+  width: 30px;
+  height: 30px;
+}
+
+.quadro-perguntas {
+  padding: 20px;
+  height: 80%;
+  width: 89%;
+  background-color: white;
+  border-radius: 15px;
+  text-align: justify;
+  font-size: clamp(8px, 18px, 25px);
+  box-shadow: 0 5px rgba(128, 128, 128, 0.377);
+}
+
+.perguntas {
+  height: 41vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.alternativas {
+  height: 45vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.status {
+  height: 7vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--maron);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.botao-alternativas {
+  margin: 3% 5% 3% 5%;
+  padding: 1%;
+  height: 18%;
+  width: 89%;
+  background-color: white;
+  border-radius: 15px;
+  border: 2px solid rgba(128, 128, 128, 0.466);
+  box-shadow: 0 5px rgba(128, 128, 128, 0.377);
+  cursor: pointer;
+  font-size: clamp(10px, 12px, 25px);
+  font-weight: 600;
+}
+
+.botao-status {
+  cursor: pointer;
+}
+
+.status :nth-child(1) {
+  margin-left: 5%;
+  height: 87%;
+}
+
+.status :nth-child(2) {
+  height: 93%;
+}
+
+.status :nth-child(3) {
+  height: 80%;
+  margin-right: 5%;
+}
+
+.fim-jogo {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(52, 52, 50, 1);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.imagens-quiz {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.img-pergunta {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 92%;
+  width: 95%;
+  background-color: gray;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.fonte{
+  position: absolute;
+  bottom:  2%;
+  left: 2%;
+  background-color: var(--maron);
+  text-decoration: none;
+  width: 60px;
+  text-align: center;
+  border-radius: 15px;
+  color: white;
+}
+
+
+.botao-fechar {
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  width: 40px;
+  color: white;
+  background: none;
+  border: none;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.aberto {
+  opacity: 1;
+  visibility: visible;
+}
+
+.nota-final {
+  height: 41vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+}
+
+.nota-final h2,
+.pontuacao-final h2 {
+  color: white;
+  font-size: 50px;
+}
+
+.nota-final p {
+  color: white;
+  font-size: 45px;
+}
+
+.barra-nota-final {
+  background-color: rgba(52, 52, 50, 1);
+  height: 15%;
+  width: 90%;
+  border-radius: 20px;
+  border: 1px solid white;
+}
+
+.barra-de-nota {
+  background-color: green;
+  height: 100%;
+  width: 0%;
+  border-radius: 20px;
+}
+
+.pontuacao-final {
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.content {
+  height: 27vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--maron);
+}
+
+.content a {
+  height: 80%;
+}
+
+.botao-content {
+  height: 55%;
+  width: 90%;
+}
+
+@media (max-height: 720px) and (orientation: landscape) {
+  .botao-alternativas {
+    margin: 1% 5% 1% 5%;
+    padding: 0;
+    height: 18%;
+    width: 89%;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    font-size: clamp(8px, 18px, 25px);
+    font-weight: normal;
+  }
+}
+
+.img-quiz {
+  aspect-ratio: 1 / 1;
+  width: 60%;
+  height: 30%;
+  margin-top: 10%;
+  border-radius: 5%;
+}
+
+
+
+@media (min-width: 1024px) {
+  .img-quiz {
+    aspect-ratio: 1 / 1;
+    width: 50%;
+    height: 70%;
+    margin-top: 2%;
+    border-radius: 5%;
+  }
+}
