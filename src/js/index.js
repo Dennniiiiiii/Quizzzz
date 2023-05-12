@@ -44,7 +44,7 @@ function armazenaPerguntas() {
       respostaB: "Tornar obrigatório o ensino de História e Cultura Afro-brasileira apenas no Ensino Fundamental.",
       respostaC: "Tornar obrigatório o ensino de História e Cultura Afro-brasileira e Africana e Indígena apenas no Ensino Médio.",
       respostaD: "Tornar obrigatório o ensino de História e Cultura Afro-brasileira e africana apenas no Ensino Superior.",
-      correta: "Tornar obrigatório o ensino de História e Cultura Afro-brasileira e africana na educação básica do pai.",
+      correta: "Tornar obrigatório o ensino de História e Cultura Afro-brasileira e africana na educação básica do país.",
       foto: "../src/img/questao-2.jpeg",
       fonte:"https://www.professorborges.com.br/",
     },
