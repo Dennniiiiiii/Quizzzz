@@ -40,7 +40,7 @@ function armazenaPerguntas() {
     },
     {
       pergunta: "Qual é o principal objetivo da lei 10.639/2003?",
-      respostaA: "Tornar obrigatório o ensino de História e Cultura Afro-brasileira e africana na educação básica do pai.",
+      respostaA: "Tornar obrigatório o ensino de História e Cultura Afro-brasileira e africana na educação básica do país.",
       respostaB: "Tornar obrigatório o ensino de História e Cultura Afro-brasileira apenas no Ensino Fundamental.",
       respostaC: "Tornar obrigatório o ensino de História e Cultura Afro-brasileira e Africana e Indígena apenas no Ensino Médio.",
       respostaD: "Tornar obrigatório o ensino de História e Cultura Afro-brasileira e africana apenas no Ensino Superior.",
