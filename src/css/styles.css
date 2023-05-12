@@ -924,10 +924,12 @@
   }
 
 
-@media (max-width: 560px) {
+@media (min-width: 548px) {
   .lei h1 {
     color: #FF8C00;
-    font-size: 40px;
+    font-size: 20px;
+    margin-left: 6%;
+    position: absolute;
     text-shadow: 0 1px 0 black,
       0 2px 0 black,
       0 3px 0 black,
@@ -942,10 +944,29 @@
       0 20px 20px rgba(0, 0, 0, .15);
   }
 
+  .lei h2 {
+    font-size: 40px;
+    text-shadow: 0 1px 0 black,
+      0 2px 0 black,
+      0 3px 0 black,
+      0 4px 0 black,
+      0 5px 0 black,
+      0 6px 1px rgba(0, 0, 0, .1),
+      0 0 5px rgba(0, 0, 0, .1),
+      0 1px 3px rgba(0, 0, 0, .3),
+      0 3px 5px rgba(0, 0, 0, .2),
+      0 5px 10px rgba(0, 0, 0, .25),
+      0 10px 10px rgba(0, 0, 0, .2),
+      0 20px 20px rgba(0, 0, 0, .15);
+      margin-top: 100%;
+      
+  
+  }
+
   .lei h3 {
     color: 		#4169E1;
-    margin-right: 500%;
-    position: absolute;
+    font-size: 10px;
+ 
     text-align: start;
     text-shadow: 0 1px 0 black,
       0 2px 0 black,
@@ -959,6 +980,37 @@
       0 5px 10px rgba(0, 0, 0, .25),
       0 10px 10px rgba(0, 0, 0, .2),
       0 20px 20px rgba(0, 0, 0, .15);
+  }
+
+  .botao-iniciar {
+    margin-left: 10%;
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    position: relative;
+    padding: 20px 40px;
+    padding: 2.5%;
+    height: 20%;
+    width: 40%;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 5px #808080;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #FF8C00;
+    text-align: center;
+    color: #8B4513;
+    font-size: 25px;
+    margin-bottom: 9%;
+    font-weight: 600;
+    text-shadow: 0px 1px 0px #000;
+    filter: dropshadow(color=#000, offx=0px, offy=1px);
+    box-shadow: inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+    border-radius: 10px;
   }
 }
 
@@ -1007,6 +1059,295 @@
     margin-right: 500%;
     position: absolute;
     text-align: start;
+    text-shadow: 0 1px 0 black,
+      0 2px 0 black,
+      0 3px 0 black,
+      0 4px 0 black,
+      0 5px 0 black,
+      0 6px 1px rgba(0, 0, 0, .1),
+      0 0 5px rgba(0, 0, 0, .1),
+      0 1px 3px rgba(0, 0, 0, .3),
+      0 3px 5px rgba(0, 0, 0, .2),
+      0 5px 10px rgba(0, 0, 0, .25),
+      0 10px 10px rgba(0, 0, 0, .2),
+      0 20px 20px rgba(0, 0, 0, .15);
+  }
+}
+
+@media (min-width: 360px) {
+
+  .lei h1 {
+    color: #FF8C00;
+    font-size: 20px;
+    margin-left: 6%;
+    position: absolute;
+    text-shadow: 0 1px 0 black,
+      0 2px 0 black,
+      0 3px 0 black,
+      0 4px 0 black,
+      0 5px 0 black,
+      0 6px 1px rgba(0, 0, 0, .1),
+      0 0 5px rgba(0, 0, 0, .1),
+      0 1px 3px rgba(0, 0, 0, .3),
+      0 3px 5px rgba(0, 0, 0, .2),
+      0 5px 10px rgba(0, 0, 0, .25),
+      0 10px 10px rgba(0, 0, 0, .2),
+      0 20px 20px rgba(0, 0, 0, .15);
+  }
+
+  .lei h2 {
+    font-size: 20px;
+    text-shadow: 0 1px 0 black,
+      0 2px 0 black,
+      0 3px 0 black,
+      0 4px 0 black,
+      0 5px 0 black,
+      0 6px 1px rgba(0, 0, 0, .1),
+      0 0 5px rgba(0, 0, 0, .1),
+      0 1px 3px rgba(0, 0, 0, .3),
+      0 3px 5px rgba(0, 0, 0, .2),
+      0 5px 10px rgba(0, 0, 0, .25),
+      0 10px 10px rgba(0, 0, 0, .2),
+      0 20px 20px rgba(0, 0, 0, .15);
+      margin-top: 100%;
+  
+  }
+
+  .lei h3 {
+    color: 		#4169E1;
+    font-size: 10px;
+    position: absolute;
+    text-align: start;
+    text-shadow: 0 1px 0 black,
+      0 2px 0 black,
+      0 3px 0 black,
+      0 4px 0 black,
+      0 5px 0 black,
+      0 6px 1px rgba(0, 0, 0, .1),
+      0 0 5px rgba(0, 0, 0, .1),
+      0 1px 3px rgba(0, 0, 0, .3),
+      0 3px 5px rgba(0, 0, 0, .2),
+      0 5px 10px rgba(0, 0, 0, .25),
+      0 10px 10px rgba(0, 0, 0, .2),
+      0 20px 20px rgba(0, 0, 0, .15);
+  }
+
+  .botao-iniciar {
+    margin-left: 10%;
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    position: relative;
+    padding: 20px 40px;
+    padding: 2.5%;
+    height: 20%;
+    width: 40%;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 5px #808080;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #FF8C00;
+    text-align: center;
+    color: #8B4513;
+    font-size: 25px;
+    margin-bottom: 9%;
+    font-weight: 600;
+    text-shadow: 0px 1px 0px #000;
+    filter: dropshadow(color=#000, offx=0px, offy=1px);
+    box-shadow: inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 542px) {
+
+  .lei h1 {
+    color: #FF8C00;
+    font-size: 20px;
+    margin-left: 6%;
+    position: absolute;
+    text-shadow: 0 1px 0 black,
+      0 2px 0 black,
+      0 3px 0 black,
+      0 4px 0 black,
+      0 5px 0 black,
+      0 6px 1px rgba(0, 0, 0, .1),
+      0 0 5px rgba(0, 0, 0, .1),
+      0 1px 3px rgba(0, 0, 0, .3),
+      0 3px 5px rgba(0, 0, 0, .2),
+      0 5px 10px rgba(0, 0, 0, .25),
+      0 10px 10px rgba(0, 0, 0, .2),
+      0 20px 20px rgba(0, 0, 0, .15);
+  }
+
+  .lei h2 {
+    font-size: 20px;
+    text-shadow: 0 1px 0 black,
+      0 2px 0 black,
+      0 3px 0 black,
+      0 4px 0 black,
+      0 5px 0 black,
+      0 6px 1px rgba(0, 0, 0, .1),
+      0 0 5px rgba(0, 0, 0, .1),
+      0 1px 3px rgba(0, 0, 0, .3),
+      0 3px 5px rgba(0, 0, 0, .2),
+      0 5px 10px rgba(0, 0, 0, .25),
+      0 10px 10px rgba(0, 0, 0, .2),
+      0 20px 20px rgba(0, 0, 0, .15);
+      margin-top: 100%;
+  
+  }
+
+  .lei h3 {
+    color: 		#4169E1;
+    font-size: 10px;
+    position: absolute;
+    text-align: start;
+    text-shadow: 0 1px 0 black,
+      0 2px 0 black,
+      0 3px 0 black,
+      0 4px 0 black,
+      0 5px 0 black,
+      0 6px 1px rgba(0, 0, 0, .1),
+      0 0 5px rgba(0, 0, 0, .1),
+      0 1px 3px rgba(0, 0, 0, .3),
+      0 3px 5px rgba(0, 0, 0, .2),
+      0 5px 10px rgba(0, 0, 0, .25),
+      0 10px 10px rgba(0, 0, 0, .2),
+      0 20px 20px rgba(0, 0, 0, .15);
+  }
+
+  .botao-iniciar {
+    margin-left: 10%;
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    position: relative;
+    padding: 20px 40px;
+    padding: 2.5%;
+    height: 20%;
+    width: 40%;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 5px #808080;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #FF8C00;
+    text-align: center;
+    color: #8B4513;
+    font-size: 25px;
+    margin-bottom: 9%;
+    font-weight: 600;
+    text-shadow: 0px 1px 0px #000;
+    filter: dropshadow(color=#000, offx=0px, offy=1px);
+    box-shadow: inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+    border-radius: 10px;
+  }
+}
+
+
+@media (min-width: 1366px) {
+  .lei h1 {
+    color: #FF8C00;
+    font-size: 40px;
+    margin-left: 150%;
+    text-shadow: 0 1px 0 black,
+      0 2px 0 black,
+      0 3px 0 black,
+      0 4px 0 black,
+      0 5px 0 black,
+      0 6px 1px rgba(0, 0, 0, .1),
+      0 0 5px rgba(0, 0, 0, .1),
+      0 1px 3px rgba(0, 0, 0, .3),
+      0 3px 5px rgba(0, 0, 0, .2),
+      0 5px 10px rgba(0, 0, 0, .25),
+      0 10px 10px rgba(0, 0, 0, .2),
+      0 20px 20px rgba(0, 0, 0, .15);
+  }
+
+  .lei h2 {
+    font-size: 20px;
+    text-shadow: 0 1px 0 black,
+      0 2px 0 black,
+      0 3px 0 black,
+      0 4px 0 black,
+      0 5px 0 black,
+      0 6px 1px rgba(0, 0, 0, .1),
+      0 0 5px rgba(0, 0, 0, .1),
+      0 1px 3px rgba(0, 0, 0, .3),
+      0 3px 5px rgba(0, 0, 0, .2),
+      0 5px 10px rgba(0, 0, 0, .25),
+      0 10px 10px rgba(0, 0, 0, .2),
+      0 20px 20px rgba(0, 0, 0, .15);
+      margin-bottom: -40%;
+
+  }
+
+  .lei h3 {
+    color: 	#4682B4;
+    font-size: 20px;
+    margin-right: 640%;
+    text-shadow: 0 1px 0 black,
+      0 2px 0 black,
+      0 3px 0 black,
+      0 4px 0 black,
+      0 5px 0 black,
+      0 6px 1px rgba(0, 0, 0, .1),
+      0 0 5px rgba(0, 0, 0, .1),
+      0 1px 3px rgba(0, 0, 0, .3),
+      0 3px 5px rgba(0, 0, 0, .2),
+      0 5px 10px rgba(0, 0, 0, .25),
+      0 10px 10px rgba(0, 0, 0, .2),
+      0 20px 20px rgba(0, 0, 0, .15);
+  }
+
+  .botao-iniciar {
+    margin-left: 65%;
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    position: relative;
+    padding: 20px 40px;
+    padding: 2.5%;
+    height: 20%;
+    width: 15%;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 5px #808080;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #FF8C00;
+    text-align: center;
+    color: #8B4513;
+    font-size: 25px;
+    margin-bottom: 4%;
+    font-weight: 600;
+    text-shadow: 0px 1px 0px #000;
+    filter: dropshadow(color=#000, offx=0px, offy=1px);
+    box-shadow: inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+    border-radius: 10px;
+  }
+}
+
+@media (min-width: 1600px) {
+  
+  .lei h3 {
+    color: 	#4682B4;
+    font-size: 20px;
+    margin-right: 740%;
     text-shadow: 0 1px 0 black,
       0 2px 0 black,
       0 3px 0 black,
