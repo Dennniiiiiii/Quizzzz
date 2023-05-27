@@ -29,7 +29,7 @@ imagensQuiz.classList.toggle('aberto');
 function armazenaPerguntas() {
   const perguntas = [
     {
-      pergunta: "Em que ano a lei 10.639/2003 foi promulgada?",
+      pergunta: "Em que ano a lei 10.639 foi promulgada?",
       respostaA: "2005",
       respostaB: "2008",
       respostaC: "2003",
