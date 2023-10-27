@@ -114,7 +114,7 @@ function armazenaPerguntas() {
       respostaB: "A valorização de uma histórica do povo negro no Brasil, sem levar em consideração as especificidades locais e regionais.",
       respostaC: "Compreender os negros e negras como sujeitos históricos, que elaboram uma rica história e uma diversificada cultura.",
       respostaD: "A omissão do protagonismo negro, bem como a ideia de empoderamento das mulheres negras.",
-      correta: "Compreender os negros e negras como sujeitos históricos construtores de sua própria história.",
+      correta: "Compreender os negros e negras como sujeitos históricos, que elaboram uma rica história e uma diversificada cultura.",
       foto: "../src/img/questao-9.jpeg",
       fonte:"https://www.professorborges.com.br/",
     },
